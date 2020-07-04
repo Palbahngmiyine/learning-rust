@@ -1,0 +1,7 @@
+# Build Asset
+*.exe
+*.pdb
+*/target
+
+# IntelliJ IDEA
+.idea
