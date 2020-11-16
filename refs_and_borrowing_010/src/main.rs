@@ -3,7 +3,6 @@ fn main() {
     let len = calculate_length(&s1);
     println!("The length of '{}' is {}.", s1, len);
 
-
     let mut s = String::from("hello");
     println!("{}", s);
     change(&mut s);
@@ -25,4 +24,13 @@ fn dangle() -> String {
     let s = String::from("hello, world!");
 
     s
+}
+
+fn build_user(email: String, username: String) -> User {
+    User {
+        email: email,
+        username: username,
+        active: true,
+        sign_in_count: 1,
+    }
 }
